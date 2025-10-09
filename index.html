@@ -51,8 +51,7 @@
           </ul>
         </div>
         <div class="nav__actions">
-          <a href="#" class="btn btn--secondary">Iniciar Sesión</a>
-          <a href="#" class="btn btn--primary">Registro</a>
+          <a href="admin/login.html" class="btn btn--primary">Administrador</a>
         </div>
         <div class="nav__toggle" id="nav-toggle">
           <i class="fas fa-bars"></i>
@@ -487,13 +486,18 @@
             </div>
           </div>
           <div class="contact__form">
-            <form class="form" id="contact-form">
+            <form
+              class="form"
+              id="contact-form"
+              action="guardar.php"
+              method="POST"
+            >
               <div class="form__group">
                 <label for="name" class="form__label">Nombre</label>
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="nombre"
                   class="form__input"
                   required
                 />
@@ -509,25 +513,10 @@
                 />
               </div>
               <div class="form__group">
-                <label for="subject" class="form__label">Asunto</label>
-                <select
-                  id="subject"
-                  name="subject"
-                  class="form__input"
-                  required
-                >
-                  <option value="">Selecciona un asunto</option>
-                  <option value="general">Consulta General</option>
-                  <option value="courses">Información de Cursos</option>
-                  <option value="pricing">Precios y Planes</option>
-                  <option value="technical">Soporte Técnico</option>
-                </select>
-              </div>
-              <div class="form__group">
                 <label for="message" class="form__label">Mensaje</label>
                 <textarea
                   id="message"
-                  name="message"
+                  name="mensaje"
                   class="form__input form__textarea"
                   rows="5"
                   required
