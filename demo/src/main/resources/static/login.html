@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión - IA Solutions</title>
+
+    <!-- Fuentes y Estilos -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/loginStyle.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="brand">
+        <i class="fas fa-brain"></i>
+        <h2>IA Solutions</h2>
+      </div>
+      <p>Accede a tu cuenta para continuar aprendiendo</p>
+
+      <form class="login-form" action="/login" method="post">
+        <input type="text" placeholder="usuario" name="username" required />
+        <input type="password" placeholder="Contraseña" name="password" required />
+        <button type="submit" class="btn--login">Iniciar Sesión</button>
+      </form>
+
+      <div class="login-footer">
+        <p>¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
+        <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+      </div>
+    </div>
+  </body>
+</html>
